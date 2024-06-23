@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 import { firstName, lastName } from '@config';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -60,13 +61,17 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
+  const one = (
+    <h1>
+      <Trans>Hi people</Trans>, my name is
+    </h1>
+  );
   const two = (
     <h2 className="big-heading">
       {firstName} {lastName}.
     </h2>
   );
-  const three = <h3 className="big-heading">Eu amo a Isadore.</h3>;
+  const three = <h3 className="big-heading">Engenheiro de Software</h3>;
   const four = (
     <>
       <p>

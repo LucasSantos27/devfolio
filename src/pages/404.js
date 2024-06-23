@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { navDelay } from '@utils';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 const StyledMainContainer = styled.main`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -43,7 +44,9 @@ const NotFoundPage = ({ location }) => {
   const content = (
     <StyledMainContainer className="fillHeight">
       <StyledTitle>404</StyledTitle>
-      <StyledSubtitle>Page Not Found</StyledSubtitle>
+      <StyledSubtitle>
+        <Trans>Page Not Found</Trans>
+      </StyledSubtitle>
       <StyledHomeButton to="/">Go Home</StyledHomeButton>
     </StyledMainContainer>
   );
@@ -72,3 +75,17 @@ NotFoundPage.propTypes = {
 };
 
 export default NotFoundPage;
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
