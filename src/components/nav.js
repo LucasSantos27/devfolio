@@ -8,6 +8,8 @@ import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo, IconHex } from '@components/icons';
+import { useI18next } from 'gatsby-plugin-react-i18next';
+import Dropdown from './dropdown';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -96,7 +98,6 @@ const StyledNav = styled.nav`
           }
         }
       }
-
       &:hover,
       &:focus {
         outline: 0;
@@ -211,6 +212,17 @@ const Nav = ({ isHome }) => {
     </a>
   );
 
+  const forTo = {
+    en: 'EN-US',
+    br: 'PT-BR',
+  };
+
+  const { languages, changeLanguage, language } = useI18next();
+
+  const DropdownLanguage = (
+    <Dropdown activatorText={language} items={languages} forTo={forTo} callback={changeLanguage} />
+  );
+
   return (
     <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
       <StyledNav>
@@ -228,6 +240,7 @@ const Nav = ({ isHome }) => {
                   ))}
               </ol>
               <div>{ResumeLink}</div>
+              <div>{DropdownLanguage}</div>
             </StyledLinks>
 
             <Menu />
@@ -256,6 +269,14 @@ const Nav = ({ isHome }) => {
                     ))}
                 </TransitionGroup>
               </ol>
+
+              <TransitionGroup component={null}>
+                <CSSTransition classNames={fadeClass} timeout={timeout}>
+                  <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 100}ms` }}>
+                    {DropdownLanguage}
+                  </div>
+                </CSSTransition>
+              </TransitionGroup>
 
               <TransitionGroup component={null}>
                 {isMounted && (
