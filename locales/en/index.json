@@ -1,5 +1,19 @@
 {
-  "Home": "Home",
-  "Hi people": "Hi Jecas da Roça",
+  "_section0": "NAV",
+  "About": "About",
+  "Experience": "Experience",
+  "Work": "Works",
+  "Contact": "Contact",
+  "CV": "Resume",
+
+  "_section1": "HERO",
+  "Title": "Hi, my name is",
+  "Subtitle": "Welcome to my portfolio",
+  "Intro": "Software Engineer with over 3 years of experience, specializing in Flutter, Android, and Node.js. Passionate about learning new technologies and dedicated to finding optimal solutions",
+  "callToAction": "Get in touch",
+
+  "_section2": "ABOUT",
+
+  "_section404": "ERRORS",
   "Page Not Found": "Não funcionou essa porra"
 }

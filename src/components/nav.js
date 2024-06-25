@@ -8,7 +8,7 @@ import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo, IconHex } from '@components/icons';
-import { useI18next } from 'gatsby-plugin-react-i18next';
+import { useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import Dropdown from './dropdown';
 
 const StyledHeader = styled.header`
@@ -208,7 +208,7 @@ const Nav = ({ isHome }) => {
 
   const ResumeLink = (
     <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
+      <Trans>CV</Trans>
     </a>
   );
 
@@ -235,7 +235,9 @@ const Nav = ({ isHome }) => {
                 {navLinks &&
                   navLinks.map(({ url, name }, i) => (
                     <li key={i}>
-                      <Link to={url}>{name}</Link>
+                      <Link to={url}>
+                        <Trans>{name}</Trans>
+                      </Link>
                     </li>
                   ))}
               </ol>
@@ -263,7 +265,9 @@ const Nav = ({ isHome }) => {
                     navLinks.map(({ url, name }, i) => (
                       <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
                         <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
-                          <Link to={url}>{name}</Link>
+                          <Link to={url}>
+                            <Trans>{name}</Trans>
+                          </Link>
                         </li>
                       </CSSTransition>
                     ))}

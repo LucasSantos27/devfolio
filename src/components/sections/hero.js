@@ -45,6 +45,7 @@ const StyledHeroSection = styled.section`
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    cursor: pointer;
   }
 `;
 
@@ -63,35 +64,33 @@ const Hero = () => {
 
   const one = (
     <h1>
-      <Trans>Hi people</Trans>, my name is
+      <Trans>Title</Trans>
     </h1>
   );
   const two = (
     <h2 className="big-heading">
-      {firstName} {lastName}.
+      {firstName} {lastName},
     </h2>
   );
-  const three = <h3 className="big-heading">Engenheiro de Software</h3>;
+  const three = (
+    <h3 className="big-heading">
+      <Trans>Subtitle</Trans>!
+    </h3>
+  );
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
+        <Trans>Intro</Trans>.
       </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="https://www.linkedin.com/in/devlucass/"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      <Trans>callToAction</Trans>!
     </a>
   );
 

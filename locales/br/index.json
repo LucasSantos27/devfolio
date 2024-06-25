@@ -1,5 +1,19 @@
 {
-  "Home": "Home",
-  "Hi people": "Hi people!!",
+  "_section0": "NAV",
+  "About": "Sobre",
+  "Experience": "Experiência",
+  "Work": "Projetos",
+  "Contact": "Contato",
+  "CV": "Currículo",
+
+  "_section1": "HERO",
+  "Title": "Olá, meu nome é",
+  "Subtitle": "Bem vindo ao meu portfólio",
+  "Intro": "Engenheiro de Software com mais de 3 anos de experiência, especializado em Flutter, Android e Node.js. Apaixonado por aprender novas tecnologias e dedicado a encontrar as melhores soluções",
+  "callToAction": "Entre em contato",
+
+  "_section2": "ABOUT",
+
+  "_section404": "ERRORS",
   "Page Not Found": "Não funcionou essa porra"
 }
