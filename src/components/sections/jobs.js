@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { Trans } from 'react-i18next';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -177,10 +178,13 @@ const Jobs = () => {
               title
               company
               location
-              range
+              startMonth
+              startYear
+              endMonth
+              endYear
               url
+              mainTopics
             }
-            html
           }
         }
       }
@@ -244,8 +248,9 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
-
+      <h2 className="numbered-heading">
+        <Trans i18nKey="jobTitle" />
+      </h2>
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
           {jobsData &&
@@ -272,9 +277,17 @@ const Jobs = () => {
         <StyledTabPanels>
           {jobsData &&
             jobsData.map(({ node }, i) => {
-              const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
-
+              const { frontmatter } = node;
+              const {
+                title,
+                url,
+                company,
+                startMonth,
+                startYear,
+                endMonth,
+                endYear,
+                mainTopics,
+              } = frontmatter;
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
                   <StyledTabPanel
@@ -288,15 +301,28 @@ const Jobs = () => {
                       <span>{title}</span>
                       <span className="company">
                         &nbsp;@&nbsp;
-                        <a href={url} className="inline-link">
+                        <a
+                          href={url}
+                          className="inline-link"
+                          target="_blank"
+                          rel="noopener noreferrer">
                           {company}
                         </a>
                       </span>
                     </h3>
 
-                    <p className="range">{range}</p>
-
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
+                    <p className="range">
+                      <Trans i18nKey={startMonth} /> {startYear} - <Trans i18nKey={endMonth} />{' '}
+                      {endYear}
+                    </p>
+                    <ul>
+                      {mainTopics &&
+                        mainTopics.map((topic, index) => (
+                          <li key={index}>
+                            <Trans i18nKey={topic} components={{ bold: <strong /> }} />
+                          </li>
+                        ))}
+                    </ul>
                   </StyledTabPanel>
                 </CSSTransition>
               );

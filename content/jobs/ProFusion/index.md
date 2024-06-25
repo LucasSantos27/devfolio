@@ -1,10 +1,19 @@
 ---
-date: '2015-12-21'
-title: 'Creative Technologist Co-op'
-company: 'MullenLowe'
-location: 'Boston, MA'
-range: 'July - December 2015'
-url: 'https://us.mullenlowe.com/'
+date: '2021-10-09'
+title: 'Software Engineer'
+company: 'Profusion Mobi'
+location: 'Campinas, SP'
+startMonth: '10'
+startYear: '2021'
+endMonth: 'Present'
+endYear: ''
+url: 'https://profusion.mobi/index-en.html'
+mainTopics:
+  - 'ProFusionTopic1'
+  - 'ProFusionTopic2'
+  - 'ProFusionTopic3'
+  - 'ProFusionTopic4'
+  - 'ProFusionTopic5'
 ---
 
 - Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery

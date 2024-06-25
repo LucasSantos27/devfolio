@@ -21,6 +21,28 @@
   "bolierPlate": "I also created and worked in boilerplates to significantly reduce project setup time and ensure consistency across applications with",
   "techWithAnother": "{{first}} & {{second}}",
 
+  "_section3": "JOBS",
+  "jobTitle": "Where I've Worked",
+  "01": "January",
+  "02": "February",
+  "03": "March",
+  "04": "April",
+  "05": "May",
+  "06": "June",
+  "07": "July",
+  "08": "August",
+  "09": "September",
+  "10": "October",
+  "11": "November",
+  "12": "December",
+  "Present": "Present",
+  "ProFusionTopic1": "Led the technical onboarding process for new contributors, providing guidance and support to ensure a smooth and efficient integration into the company's workflow.",
+  "ProFusionTopic2": "Actively mentored junior team members, fostering their professional growth and enhancing their technical skills through periodic feedback and knowledge sharing.",
+  "ProFusionTopic3": "Played a pivotal role in the creation of a robust server for the investment sector, integrating financial products such as Fixed Income and Investment Funds, utilizing <bold>GraphQL</bold>, <bold>TypeScript</bold>, and <bold>Node.js</bold>.",
+  "ProFusionTopic4": "Participated in integrating an augmented reality experience at a major festival, using <bold>Flutter</bold> with <bold>Provider</bold> and <bold>Unity</bold> to develop a mobile application, resulting in over 200k downloads on iOS and Android platforms.",
+  "ProFusionTopic5": "Collaborated with a leading car manufacturer to develop apps for the car's multimedia system using <bold>TypeScript</bold> and <bold>Node.js</bold>, and refactored <bold>JavaScript</bold> code to <bold>TypeScript</bold>, improving code quality and maintainability.",
+  "MegaleiosTopic1": "Led projects from conception to delivery, creating new features for live apps and developing apps from scratch. Worked in various sectors, including real estate, hardware retail, and entertainment, using <bold>Flutter</bold> and <bold>React Native</bold>.",
+
   "_section404": "ERRORS",
-  "Page Not Found": "Não funcionou essa porra"
+  "Page Not Found": "Not Working"
 }
