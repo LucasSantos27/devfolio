@@ -2,6 +2,7 @@ module.exports = {
   firstName: 'Lucas',
   lastName: 'Santos',
   email: 'devlucassantoss@gmail.com',
+  workExperienceInYears: '3',
 
   socialMedia: [
     {

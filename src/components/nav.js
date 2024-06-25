@@ -208,7 +208,7 @@ const Nav = ({ isHome }) => {
 
   const ResumeLink = (
     <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      <Trans>CV</Trans>
+      <Trans i18nKey="CV" />
     </a>
   );
 
@@ -236,7 +236,7 @@ const Nav = ({ isHome }) => {
                   navLinks.map(({ url, name }, i) => (
                     <li key={i}>
                       <Link to={url}>
-                        <Trans>{name}</Trans>
+                        <Trans i18nKey={name} />
                       </Link>
                     </li>
                   ))}
@@ -266,7 +266,7 @@ const Nav = ({ isHome }) => {
                       <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
                         <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
                           <Link to={url}>
-                            <Trans>{name}</Trans>
+                            <Trans i18nKey={name} />
                           </Link>
                         </li>
                       </CSSTransition>

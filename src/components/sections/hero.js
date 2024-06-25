@@ -3,7 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
-import { firstName, lastName } from '@config';
+import { firstName, lastName, workExperienceInYears } from '@config';
 import { Trans } from 'gatsby-plugin-react-i18next';
 
 const StyledHeroSection = styled.section`
@@ -64,7 +64,7 @@ const Hero = () => {
 
   const one = (
     <h1>
-      <Trans>Title</Trans>
+      <Trans i18nKey="Title" />
     </h1>
   );
   const two = (
@@ -74,13 +74,13 @@ const Hero = () => {
   );
   const three = (
     <h3 className="big-heading">
-      <Trans>Subtitle</Trans>!
+      <Trans i18nKey="Subtitle" />!
     </h3>
   );
   const four = (
     <>
       <p>
-        <Trans>Intro</Trans>.
+        <Trans i18nKey="Intro" values={{ years: workExperienceInYears }} />
       </p>
     </>
   );
@@ -90,7 +90,7 @@ const Hero = () => {
       href="https://www.linkedin.com/in/devlucass/"
       target="_blank"
       rel="noreferrer">
-      <Trans>callToAction</Trans>!
+      <Trans i18nKey="callToAction" />!
     </a>
   );
 

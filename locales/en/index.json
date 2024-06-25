@@ -9,10 +9,17 @@
   "_section1": "HERO",
   "Title": "Hi, my name is",
   "Subtitle": "Welcome to my portfolio",
-  "Intro": "Software Engineer with over 3 years of experience, specializing in Flutter, Android, and Node.js. Passionate about learning new technologies and dedicated to finding optimal solutions",
+  "Intro": "Software Engineer with over {{years}} years of experience, specializing in Flutter, Android, and Node.js. Passionate about learning new technologies and dedicated to finding optimal solutions",
   "callToAction": "Get in touch",
 
   "_section2": "ABOUT",
+  "aboutTitle": "About me",
+  "presentation": "Hello! My name is {{firstName}}",
+  "aboutMe": "I am committed to excellence in writing and reviewing code to ensure high-quality software delivery. With expertise in full-stack development, cross-platform mobile development, and embedded systems, I consistently strive to build efficient and innovative solutions",
+  "remoteJob": "I've been working remotely for over {{years}} years, demonstrating strong skills in <colored>asynchronous communication</colored>, <colored>self-management</colored>, and <colored>team leadership</colored>. These abilities have contributed to successful project outcomes in an empowering work environment",
+  "git": "I have extensive experience and expertise in <colored>Git</colored> and <colored>code review</colored> processes, ensuring high code quality and effective version control",
+  "bolierPlate": "I also created and worked in boilerplates to significantly reduce project setup time and ensure consistency across applications with",
+  "techWithAnother": "{{first}} & {{second}}",
 
   "_section404": "ERRORS",
   "Page Not Found": "Não funcionou essa porra"
