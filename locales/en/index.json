@@ -49,6 +49,16 @@
   "IHaveNeverParagraph1": "Developed a social game app with Flutter and Bloc, boasting over 10k downloads, offering over 400 engaging questions for fun with friends.",
   "LintMeParagraph1": "Lintme is a toolkit that helps you identify and fix problems in your Dart and Flutter code. These problems can range from potential runtime bugs and violations of best practices to styling issues.",
 
+  "_section5": "CONTACT",
+  "contactTitle": "What's Next",
+  "contactSubtitle": "Get In Touch",
+  "contactParagraph": "You can contact me with any questions, suggestions, or just to say hi. I am always open to new ideas and collaborations. Whether it's about collaborating on exciting projects, startups, open-source, or anything else, feel free to reach out",
+  "contactButton": "Say Hello",
+
+  "_section6": "FOOTER",
+  "designedBy": "Designed & Built by",
+  "andAdaptedBy": "Adapted by",
+
   "_section404": "ERRORS",
   "Page Not Found": "Not Working"
 }
