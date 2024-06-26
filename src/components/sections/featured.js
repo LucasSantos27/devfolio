@@ -6,6 +6,7 @@ import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import { Trans } from 'react-i18next';
 
 const StyledProjectsGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
@@ -320,11 +321,9 @@ const Featured = () => {
                 }
               }
               tech
-              github
               external
-              cta
+              desc
             }
-            html
           }
         }
       }
@@ -348,30 +347,36 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        <Trans i18nKey="featuredTitle" />
       </h2>
 
       <StyledProjectsGrid>
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
-            const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { frontmatter } = node;
+            const { external, title, tech, cover, desc } = frontmatter;
             const image = getImage(cover);
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
+                    <p className="project-overline">
+                      <Trans i18nKey="featuredProject" />
+                    </p>
 
                     <h3 className="project-title">
                       <a href={external}>{title}</a>
                     </h3>
 
-                    <div
-                      className="project-description"
-                      dangerouslySetInnerHTML={{ __html: html }}
-                    />
+                    <div className="project-description">
+                      {desc &&
+                        desc.map((paragraph, index) => (
+                          <p key={index}>
+                            <Trans i18nKey={paragraph} components={{ colored: <span /> }} />
+                          </p>
+                        ))}
+                    </div>
 
                     {tech.length && (
                       <ul className="project-tech-list">
@@ -382,17 +387,12 @@ const Featured = () => {
                     )}
 
                     <div className="project-links">
-                      {cta && (
-                        <a href={cta} aria-label="Course Link" className="cta">
-                          Learn More
-                        </a>
-                      )}
-                      {github && (
+                      {/* {github && (
                         <a href={github} aria-label="GitHub Link">
                           <Icon name="GitHub" />
                         </a>
-                      )}
-                      {external && !cta && (
+                      )} */}
+                      {external && (
                         <a href={external} aria-label="External Link" className="external">
                           <Icon name="External" />
                         </a>
@@ -402,7 +402,7 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
+                  <a href={external ? external : '#'}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>

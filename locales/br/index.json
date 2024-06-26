@@ -43,6 +43,12 @@
   "ProFusionTopic5": "Colaborei com um importante fabricante de automóveis para desenvolver aplicativos para o sistema multimídia do carro usando <bold>TypeScript</bold> e <bold>Node.js</bold>, e refatorei o código <bold>JavaScript</bold> para <bold>TypeScript</bold>, melhorando a qualidade e a manutenibilidade do código.",
   "MegaleiosTopic1": "Liderei projetos desde a concepção até a entrega, criando novas funcionalidades para aplicativos em produção e desenvolvendo aplicativos do zero. Trabalhei em vários setores, incluindo imóveis, varejo de hardware e entretenimento, usando <bold>Flutter</bold> e <bold>React Native</bold>.",
 
+  "_section4": "FEATUREDS",
+  "featuredTitle": "Projetos Pessoais",
+  "featuredProject": "Destaque",
+  "IHaveNeverParagraph1": "Desenvolvi um aplicativo de jogo social com Flutter e Bloc, com mais de 10 mil downloads, oferecendo mais de 400 perguntas envolventes para diversão com amigos.",
+  "LintMeParagraph1": "O Lintme é um conjunto de ferramentas que ajuda você a identificar e corrigir problemas no seu código Dart e Flutter. Esses problemas podem variar desde possíveis bugs de tempo de execução e violações de boas práticas até questões de estilo.",
+
   "_section404": "ERRORS",
   "Page Not Found": "Não está funcionando"
 }
