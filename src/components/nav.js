@@ -219,8 +219,14 @@ const Nav = ({ isHome }) => {
 
   const { languages, changeLanguage, language } = useI18next();
 
-  const DropdownLanguage = (
-    <Dropdown activatorText={language} items={languages} forTo={forTo} callback={changeLanguage} />
+  const DropdownLanguage = language && (
+    <Dropdown
+      activatorText={language}
+      items={languages}
+      forTo={forTo}
+      callback={changeLanguage}
+      type="nav"
+    />
   );
 
   return (
@@ -241,8 +247,8 @@ const Nav = ({ isHome }) => {
                     </li>
                   ))}
               </ol>
-              <div>{ResumeLink}</div>
               <div>{DropdownLanguage}</div>
+              <div>{ResumeLink}</div>
             </StyledLinks>
 
             <Menu />
@@ -275,11 +281,13 @@ const Nav = ({ isHome }) => {
               </ol>
 
               <TransitionGroup component={null}>
-                <CSSTransition classNames={fadeClass} timeout={timeout}>
-                  <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 100}ms` }}>
-                    {DropdownLanguage}
-                  </div>
-                </CSSTransition>
+                {isMounted && (
+                  <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                    <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
+                      {DropdownLanguage}
+                    </div>
+                  </CSSTransition>
+                )}
               </TransitionGroup>
 
               <TransitionGroup component={null}>

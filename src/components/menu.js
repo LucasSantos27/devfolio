@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import { navLinks } from '@config';
 import { KEY_CODES } from '@utils';
 import { useOnClickOutside } from '@hooks';
+import { useI18next, Trans } from 'gatsby-plugin-react-i18next';
+import Dropdown from './dropdown';
 
 const StyledMenu = styled.div`
   display: none;
@@ -235,6 +237,23 @@ const Menu = () => {
   const wrapperRef = useRef();
   useOnClickOutside(wrapperRef, () => setMenuOpen(false));
 
+  const forTo = {
+    en: 'EN-US',
+    br: 'PT-BR',
+  };
+
+  const { languages, changeLanguage, language } = useI18next();
+
+  const DropdownLanguage = language && (
+    <Dropdown
+      activatorText={language}
+      items={languages}
+      forTo={forTo}
+      callback={changeLanguage}
+      type="menu"
+    />
+  );
+
   return (
     <StyledMenu>
       <Helmet>
@@ -259,15 +278,17 @@ const Menu = () => {
                 {navLinks.map(({ url, name }, i) => (
                   <li key={i}>
                     <Link to={url} onClick={() => setMenuOpen(false)}>
-                      {name}
+                      <Trans i18nKey={name} />
                     </Link>
                   </li>
                 ))}
               </ol>
             )}
 
+            {DropdownLanguage}
+
             <a href="/resume.pdf" className="resume-link">
-              Resume
+              <Trans i18nKey="CV" />
             </a>
           </nav>
         </StyledSidebar>

@@ -3,7 +3,18 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledDropdown = styled.div`
-.activator {
+.menu {
+  ${({ theme }) => theme.mixins.bigButton};
+  padding: 18px 53px;
+  margin: 10% auto 0;
+  width: max-content;
+  cursor: pointer;
+
+  &> button {
+    list-style: none;
+  }
+}
+.nav {
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
@@ -48,7 +59,7 @@ const StyledDropdown = styled.div`
     }
 `;
 
-const Dropdown = ({ activatorText, items = [], forTo = {}, callback }) => {
+const Dropdown = ({ activatorText, items = [], forTo = {}, callback, type }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
@@ -63,7 +74,7 @@ const Dropdown = ({ activatorText, items = [], forTo = {}, callback }) => {
 
   return (
     <StyledDropdown>
-      <button onClick={handleOpen} className="activator">
+      <button onClick={handleOpen} className={type}>
         {forTo[activatorText]}
       </button>
       {open ? (
@@ -91,6 +102,7 @@ Dropdown.propTypes = {
   items: PropTypes.array,
   forTo: PropTypes.map,
   callback: PropTypes.callback,
+  type: PropTypes.string,
 };
 
 export default Dropdown;
