@@ -13,18 +13,10 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/27lucassantos',
     },
-    // {
-    //   name: 'Twitter',
-    //   url: 'https://twitter.com/bchiang7',
-    // },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/devlucass/',
     },
-    // {
-    //   name: 'Codepen',
-    //   url: 'https://codepen.io/bchiang7',
-    // },
   ],
 
   navLinks: [
@@ -47,9 +39,9 @@ module.exports = {
   ],
 
   colors: {
-    green: '#63001E',
-    navy: '#712230',
-    darkNavy: '##3A001E',
+    green: '#64ecff',
+    navy: '#0e0a2f',
+    darkNavy: '#04021b',
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({
