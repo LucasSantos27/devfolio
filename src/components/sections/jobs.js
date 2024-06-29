@@ -43,8 +43,6 @@ const StyledTabList = styled.div`
   }
   @media (max-width: 480px) {
     width: calc(100% + 50px);
-    padding-left: 25px;
-    margin-left: -25px;
   }
 
   li {
@@ -94,6 +92,11 @@ const StyledTabButton = styled.button`
     text-align: center;
   }
 
+  @media (max-width: 480px) {
+    border: 2px solid var(--lightest-navy);
+    margin: 0px 5px;
+  }
+
   &:hover,
   &:focus {
     background-color: var(--light-navy);
@@ -123,7 +126,7 @@ const StyledHighlight = styled.div`
     transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
   }
   @media (max-width: 480px) {
-    margin-left: 25px;
+    background: transparent;
   }
 `;
 
