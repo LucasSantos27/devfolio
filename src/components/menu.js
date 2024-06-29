@@ -287,7 +287,7 @@ const Menu = () => {
 
             {DropdownLanguage}
 
-            <a href="/resume.pdf" className="resume-link">
+            <a href="/resume.pdf" className="resume-link" target="_blank" rel="noopener noreferrer">
               <Trans i18nKey="CV" />
             </a>
           </nav>
