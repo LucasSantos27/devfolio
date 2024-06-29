@@ -5,7 +5,7 @@ module.exports = {
     title: 'Lucas Santos',
     description:
       'Lucas Santos is a software engineer with over 3 years of experience, specializing in Flutter, Android, and Node.js.',
-    siteUrl: 'https://devlucassantos.com', // No trailing slash allowed!
+    siteUrl: 'https://lucas-santos.dev', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
   flags: {
