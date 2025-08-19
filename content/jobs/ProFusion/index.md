@@ -14,6 +14,8 @@ mainTopics:
   - 'ProFusionTopic3'
   - 'ProFusionTopic4'
   - 'ProFusionTopic5'
+  - 'ProFusionTopic6'
+  - 'ProFusionTopic7'
 ---
 
 - Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery
