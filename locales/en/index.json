@@ -15,12 +15,12 @@
 
   "_section2": "ABOUT",
   "aboutTitle": "About me",
-  "presentation": "Hello! My name is {{firstName}}",
-  "aboutMe": "I am committed to excellence in writing and reviewing code to ensure high-quality software delivery. With expertise in full-stack development, cross-platform mobile development, and embedded systems, I consistently strive to build efficient and innovative solutions",
-  "remoteJob": "I've been working remotely for over {{years}} years, demonstrating strong skills in <colored>asynchronous communication</colored>, <colored>self-management</colored>, and <colored>team leadership</colored>. These abilities have contributed to successful project outcomes in an empowering work environment",
-  "git": "I have extensive experience and expertise in <colored>Git</colored> and <colored>code review</colored> processes, ensuring high code quality and effective version control",
-  "bolierPlate": "I also created and worked in boilerplates to significantly reduce project setup time and ensure consistency across applications with",
-  "techWithAnother": "{{first}} & {{second}}",
+  "presentation": "Hello! My name is {{firstName}}. Nice to meet you!",
+  "remoteJob": "I’ve been working as a developer for over {{years}} years and I’m always looking to improve and grow as an engineer. I’m passionate about learning new things, which has led me to explore several areas:",
+  "andMore": "And more...",
+  "git": "I have solid experience working with <bold>Git</bold> and <bold>code review</bold> processes, ensuring effective collaboration in remote teams and maintaining high-quality version control across projects.",
+  "experience": "In recent years, I’ve specialized in <colored>TypeScript</colored>, <colored>Python</colored>, <colored>Node.js</colored>, <colored>React</colored>, and <colored>Flutter</colored>, contributing to large-scale systems in <bold>healthcare</bold>, <bold>finance</bold>, <bold>retail</bold>, and <bold>automotive</bold>.",
+  "books": "Below I’ll also list some of the software-related books I’m currently reading or have already finished and really enjoyed.",
 
   "_section3": "JOBS",
   "jobTitle": "Where I've Worked",

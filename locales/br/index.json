@@ -15,12 +15,12 @@
 
   "_section2": "ABOUT",
   "aboutTitle": "Sobre mim",
-  "presentation": "Olá! Meu nome é {{firstName}}",
-  "aboutMe": "Sou comprometido com a excelência na escrita e revisão de código para garantir a entrega de software de alta qualidade. Com experiência em desenvolvimento full-stack, desenvolvimento de aplicativos móveis multiplataforma e sistemas embarcados, estou sempre empenhado em criar soluções eficientes e inovadoras",
-  "remoteJob": "Trabalho remotamente há mais de {{years}} anos, demonstrando fortes habilidades em <colored>comunicação assíncrona</colored>, <colored>autogestão</colored> e <colored>liderança de equipe</colored>. Essas habilidades têm contribuído para o sucesso de projetos em um ambiente de trabalho inspirador",
-  "git": "Tenho ampla experiência e expertise em <colored>Git</colored> e processos de <colored>revisão de código</colored>, garantindo alta qualidade de código e controle de versão eficaz",
-  "bolierPlate": "Também criei e trabalhei em boilerplates para reduzir significativamente o tempo de configuração de projetos e garantir consistência entre as aplicações com",
-  "techWithAnother": "{{first}} & {{second}}",
+  "presentation": "Olá! Meu nome é {{firstName}}. Prazer em te conhecer!",
+  "remoteJob": "Trabalho remotamente há mais de 5 anos e estou sempre em busca de evoluir como profissional. Tenho paixão por aprender coisas novas, e por isso já me aventurei em diversas áreas:",
+  "andMore": "E muito mais...",
+  "git": "Tenho sólida experiência com <bold>Git</bold> e processos de <bold>revisão de código</bold>, garantindo colaboração eficaz em equipes remotas e mantendo alto padrão de versionamento em diferentes projetos.",
+  "experience": "Nos últimos anos, me especializei em <colored>TypeScript</colored>, <colored>Python</colored>, <colored>Node.js</colored>, <colored>React</colored> e <colored>Flutter</colored>, contribuindo para sistemas de grande escala nos setores de <bold>saúde</bold>, <bold>finanças</bold>, <bold>varejo</bold> e <bold>automotivo</bold>.",
+  "books": "Aqui também compartilho alguns dos livros da área de software que estou lendo ou já finalizei e recomendo",
 
   "_section3": "JOBS",
   "jobTitle": "Experiência Profissional",

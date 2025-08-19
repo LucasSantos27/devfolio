@@ -21,12 +21,15 @@ const StyledAboutSection = styled.section`
   }
 `;
 const StyledText = styled.div`
+  a {
+    text-decoration: underline;
+  }
   span {
     color: var(--green);
   }
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(2, minmax(140px, 240px));
     grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
@@ -140,7 +143,7 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              <Trans i18nKey="presentation" values={{ firstName }} />. <Trans i18nKey="aboutMe" />
+              <Trans i18nKey="presentation" values={{ firstName }} />
             </p>
             <p>
               <Trans
@@ -148,36 +151,69 @@ const About = () => {
                 values={{ years: workExperienceInYears }}
                 components={{ colored: <span /> }}
               />
-              .
             </p>
-
+            <ul className="skills-list">
+              <li key={0}>Backend</li>
+              <li key={1}>Web and Mobile Frontend</li>
+              <li key={2}>AI</li>
+              <li key={3}>Augmented Reality</li>
+              <li key={4}>Embedded Systems</li>
+              <li key={5}>
+                <Trans i18nKey="andMore" />
+              </li>
+            </ul>
             <p>
-              <Trans i18nKey="git" components={{ colored: <span /> }} />.
+              <Trans i18nKey="git" components={{ bold: <strong /> }} />{' '}
+              <Trans i18nKey="experience" components={{ colored: <span />, bold: <strong /> }} />
             </p>
-
             <p>
-              <Trans i18nKey="bolierPlate" />:
+              <Trans i18nKey="books" />:
             </p>
           </div>
 
           <ul className="skills-list">
             <li key={0}>
-              <Trans i18nKey="techWithAnother" values={{ first: 'Flutter', second: 'Bloc' }} />
+              <a
+                href="https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+                target="_blank" rel="noreferrer">
+                Clean Code
+              </a>
             </li>
             <li key={1}>
-              <Trans i18nKey="techWithAnother" values={{ first: 'Flutter', second: 'GetX' }} />
+              <a
+                href="https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+                target="_blank" rel="noreferrer">
+                Grokking Algorithms
+              </a>
             </li>
+
             <li key={2}>
-              <Trans i18nKey="techWithAnother" values={{ first: 'Node.js', second: 'GraphQL' }} />
+              <a
+                href="https://www.amazon.com.br/Pragmatic-Programmer-Journeyman-Master/dp/020161622X"
+                target="_blank" rel="noreferrer">
+                Pragmatic Programmer
+              </a>
             </li>
             <li key={3}>
-              <Trans i18nKey="techWithAnother" values={{ first: 'Node.js', second: 'REST' }} />
+              <a
+                href="https://www.amazon.com.br/System-Design-Interview-Insiders-Guide/dp/1736049119"
+                target="_blank" rel="noreferrer">
+                System Design Interview
+              </a>
             </li>
             <li key={4}>
-              <Trans
-                i18nKey="techWithAnother"
-                values={{ first: 'Android', second: 'Jetpack Compose' }}
-              />
+              <a
+                href="https://www.amazon.com.br/Cracking-Coding-Interview-Programming-Questions/dp/0984782850"
+                target="_blank" rel="noreferrer">
+                Cracking the Coding Interview
+              </a>
+            </li>
+            <li key={5}>
+              <a
+                href="https://www.amazon.com.br/Habits-Highly-Productive-Developers-English-ebook/dp/B08BF74RRG"
+                target="_blank" rel="noreferrer">
+                14 Habits of Highly Productive Developers
+              </a>
             </li>
           </ul>
         </StyledText>
