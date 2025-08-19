@@ -38,7 +38,7 @@ const StyledHeroSection = styled.section`
   }
 
   p {
-    margin: 20px 0 0;
+    margin: 20px 0 10px;
     max-width: 540px;
   }
 
@@ -80,7 +80,14 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        <Trans i18nKey="Intro" values={{ years: workExperienceInYears }} />
+        <Trans
+          i18nKey="Intro"
+          values={{ years: workExperienceInYears }}
+          components={{ bold: <strong /> }}
+        />
+      </p>
+      <p>
+        <Trans i18nKey="Intro2" />
       </p>
     </>
   );

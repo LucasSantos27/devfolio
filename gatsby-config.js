@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Lucas Santos',
     description:
-      'Lucas Santos is a software engineer with over 3 years of experience, specializing in Flutter, Android, and Node.js.',
+      'Lucas Santos is a software engineer with over 5 years of experience in backend and frontend development, specialized in TypeScript, Python, Node.js, React, and Flutter',
     siteUrl: 'https://lucas-santos.dev', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },

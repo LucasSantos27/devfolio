@@ -9,7 +9,8 @@
   "_section1": "HERO",
   "Title": "Hi, my name is",
   "Subtitle": "Welcome to my portfolio",
-  "Intro": "Software Engineer with over {{years}} years of experience, specializing in Flutter, Android, and Node.js. Passionate about learning new technologies and dedicated to finding optimal solutions",
+  "Intro": "Software Engineer with over {{years}} years in backend and frontend development, specialized in <bold>TypeScript</bold>, <bold>Python</bold>, <bold>Node.js</bold>, <bold>React</bold>, and <bold>Flutter</bold>. I have worked across healthcare, finance, retail, automotive, and AI projects, always in remote and multicultural environments.",
+  "Intro2": "I bring autonomy, strong communication skills, and a results-driven mindset, with a focus on effective collaboration and delivering value in high-impact projects.",
   "callToAction": "Get in touch",
 
   "_section2": "ABOUT",
