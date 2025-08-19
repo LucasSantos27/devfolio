@@ -17,6 +17,10 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/devlucass/',
     },
+    {
+      name: 'LeetCode',
+      url: 'https://leetcode.com/u/27LucasSantos/',
+    },
   ],
 
   navLinks: [
