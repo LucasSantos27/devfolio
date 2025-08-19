@@ -206,11 +206,11 @@ const Nav = ({ isHome }) => {
     </div>
   );
 
-  const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      <Trans i18nKey="CV" />
-    </a>
-  );
+  // const ResumeLink = (
+  //   <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+  //     <Trans i18nKey="CV" />
+  //   </a>
+  // );
 
   const forTo = {
     en: 'EN-US',
@@ -248,7 +248,7 @@ const Nav = ({ isHome }) => {
                   ))}
               </ol>
               <div>{DropdownLanguage}</div>
-              <div>{ResumeLink}</div>
+              {/* <div>{ResumeLink}</div> */}
             </StyledLinks>
 
             <Menu />
@@ -290,7 +290,7 @@ const Nav = ({ isHome }) => {
                 )}
               </TransitionGroup>
 
-              <TransitionGroup component={null}>
+              {/* <TransitionGroup component={null}>
                 {isMounted && (
                   <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                     <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
@@ -298,7 +298,7 @@ const Nav = ({ isHome }) => {
                     </div>
                   </CSSTransition>
                 )}
-              </TransitionGroup>
+              </TransitionGroup> */}
             </StyledLinks>
 
             <TransitionGroup component={null}>

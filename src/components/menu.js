@@ -287,9 +287,9 @@ const Menu = () => {
 
             {DropdownLanguage}
 
-            <a href="/resume.pdf" className="resume-link" target="_blank" rel="noopener noreferrer">
+            {/* <a href="/resume.pdf" className="resume-link" target="_blank" rel="noopener noreferrer">
               <Trans i18nKey="CV" />
-            </a>
+            </a> */}
           </nav>
         </StyledSidebar>
       </div>
